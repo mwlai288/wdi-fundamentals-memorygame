@@ -25,10 +25,10 @@ var cardsInPlay = [];
 
 var checkForMatch (){
 	if (cardsInPlay[0] === cardsInPlay[1]) {
-      console.log("You found a match!");
-  } else {
-      console.log("Sorry, try again.");
-  }
+		console.log("You found a match!");
+	} else {
+		console.log("Sorry, try again.");
+	}
 };
 
 var flipCard = function () {
@@ -49,7 +49,6 @@ cardElement.setAttribute('data-id', i);
 cardElement.addEventListener('click', flipCard);
 document.getElementById('game-board').appendChild('cardElement');
 }
-
 
 }; 
 createBoard();
